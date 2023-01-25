@@ -1,0 +1,298 @@
+$container: 1200px;
+$font1: 'Montserrat', sans-serif;
+$font2: 'Montserrat Alternates', sans-serif;
+$bg: #D8E4F2;
+$btn-clr: rgb(68, 82, 184);
+$txt-clr: #212121;
+
+body{
+    background-color: $bg;
+}
+
+.container{
+    width: $container;
+    margin: auto;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+    &-list{
+        font-family: $font1;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 750px;
+        list-style: none;
+        align-items: center;
+        &__txt1::before{
+            content: "\e900";
+            font-family: 'icomoon' !important;
+            padding-right: 7px;
+        }
+        &__txt2::before{
+            content: "\e902";
+            font-family: 'icomoon' !important;
+            padding-right: 7px;
+        }
+        &__txt3::before{
+            content: "\e901";
+            font-family: 'icomoon' !important;
+            padding-right: 7px;
+        }
+    }
+}
+
+.navbar img{
+    width: 190px;
+    height: 45px;
+}
+
+.navbar-list li{
+    color: $txt-clr;
+}
+
+.main{
+    padding-top: 150px;
+    &-title{
+        font-family: $font2;
+        font-size: 70px;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 20px;
+        line-height: 90px;
+    }
+    &-subtitle{
+        font-family: $font1;
+        font-size: 23px;
+        text-align: center;
+        width: 1000px;
+        margin: auto;
+        
+    }
+    &-button{
+        text-align: center;
+        padding-bottom: 50px;
+        .btn{
+            border: 1px solid $btn-clr;
+            border-radius: 20px;
+            background-color: $btn-clr;
+            color: white;
+            padding: 17px 32px;
+            transition: all .2s;
+            width: 400px;
+            font-family: $font1;
+            margin-top: 150px;
+            
+        }
+        .btn:hover{
+            background-color: transparent;
+            color: $btn-clr;
+            cursor: pointer;
+            transition: all .2s;
+        }
+    }
+}
+
+.btn{
+    border: 1px solid $btn-clr;
+    border-radius: 30px;
+    background-color: $btn-clr;
+    color: white;
+    padding: 7px 12px;
+    transition: all .2s;
+}
+.btn:hover{
+    background-color: transparent;
+    color: $btn-clr;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.work{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 70px 0;
+    &-time__title{
+        font-family: $font2;
+        font-size: 34px;
+        margin: 0;
+        padding-top: 10px;
+    }
+    &-time__subtitle{
+        font-family: $font1;
+        width: 500px;
+        line-height: 25px;
+        padding-bottom: 30px;
+    }
+    &-info{
+        text-align: center;
+        width: 550px;
+        height: 687px;
+        background: white;
+        border-radius: 5px;
+        -webkit-box-shadow: 0px 0px 6px 1px rgba(58, 99, 131, 0.2);
+        -moz-box-shadow: 0px 0px 6px 1px rgba(58, 99, 131, 0.2);
+        box-shadow: 0px 0px 6px 1px rgba(58, 99, 131, 0.2);
+        &__title{
+            font-family: $font2;
+            font-size: 50px;
+            line-height: 60px;
+            margin: 0;
+            padding-top: 40px;
+            padding-bottom: 25px;
+        }
+        &__subtitle{
+            font-family: $font1;
+            line-height: 25px;
+            font-size: 15px;
+            width: 300px;
+            margin: auto;
+        }
+        .btn{
+            margin-top: 50px;
+            font-family: $font1;
+            padding: 13px;
+            width: 250px;
+            border-radius: 15px;
+        }
+    }
+}
+
+
+.work-info img{
+    padding-top: 50px;
+}
+
+.animals span{
+    font-family: $font2;
+    font-size: 45px;
+}
+
+.animals{
+    padding-top: 30px;
+    text-align: center;
+    &-item{
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &-item__inner{
+        display: flex;
+        flex-direction: column;
+        p{
+            font-family: $font2;
+            font-size: 20px;
+            width: 100px;
+        }
+    }
+}
+
+.dogs{
+    padding: 90px 0;
+    display: flex;
+}
+
+.care{
+    padding-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px ;
+    column-gap: 40px;
+    &-item{
+        padding-top: 30px;
+        width: 580px;
+        height: 330px;
+        background-color: white;
+        text-align: center;
+        -webkit-box-shadow: 0px 0px 6px 1px rgba(58, 99, 131, 0.2);
+        -moz-box-shadow: 0px 0px 6px 1px rgba(58, 99, 131, 0.2);
+        box-shadow: 0px 0px 6px 1px rgba(58, 99, 131, 0.2);
+        border-radius: 5px;
+        &__title{
+            font-family: $font2;
+            font-size: 50px;
+            color: $txt-clr;
+        }
+        &__subtitle{
+            font-family: $font1;
+            font-size: 25px;
+            color: $txt-clr;
+        }
+        p{
+            font-family: $font1;
+            font-size: 18px;
+            margin: auto;
+            width: 500px;
+            padding-top: 50px;
+            color: $txt-clr;
+        }
+    }
+}
+
+.data{
+    margin-top: 200px;
+    text-align: center;
+    span{
+        font-family: $font2;
+        font-size: 50px;
+    }
+    P{
+        font-family: $font1;
+        font-size: 30px;
+        color: $txt-clr;
+        width: 800px;
+        line-height: 50px;
+        margin: auto;
+        margin-top: 30px;
+    }
+}
+
+.form{
+    margin-top: 20px;
+    input{
+        font-family: $font1;
+        margin-right: 20px;
+        border: 1px solid white;
+        padding: 10px 5px;
+    }
+    .btn{
+        font-family: $font1;
+        text-transform: uppercase;
+        padding: 10px 35px;
+    }
+}
+
+.social{
+    margin-top: 130px;
+    text-align: center;
+    span{
+        font-family: $font2;
+        font-size: 40px;
+    }
+    p{
+        font-family: $font1;
+        font-size: 20px;
+    }
+}
+
+.messengers-item{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50px;
+    img{
+        margin-top: 11px;
+    }
+}
+
+.footer{
+    text-align: center;
+    margin-top: 170px;
+    p{
+        font-family: $font1;
+        font-size: 15px;
+        color: $txt-clr;
+    }
+}
